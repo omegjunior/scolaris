@@ -1,0 +1,42 @@
+# Translation file
+
+#
+# Generic
+#
+
+# Module label 'ModuleScolarisName'
+ModuleScolarisName = Scolaris
+# Module description 'ModuleScolarisDesc'
+ModuleScolarisDesc = Scolaris description
+
+#
+# Admin page
+#
+ScolarisSetup = Scolaris setup
+Settings = Settings
+ScolarisSetupPage = Scolaris setup page
+NewSection=New section
+SCOLARIS_MYPARAM1 = My param 1
+SCOLARIS_MYPARAM1Tooltip = My param 1 tooltip
+SCOLARIS_MYPARAM2=My param 2
+SCOLARIS_MYPARAM2Tooltip=My param 2 tooltip
+
+
+#
+# About page
+#
+About = About
+ScolarisAbout = About Scolaris
+ScolarisAboutPage = Scolaris about page
+
+#
+# Sample page
+#
+ScolarisArea = Home Scolaris
+MyPageName = My page name
+
+#
+# Sample widget
+#
+MyWidget = My widget
+MyWidgetDescription = My widget description
