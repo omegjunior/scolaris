@@ -2,7 +2,7 @@
 /* Copyright (C) 2004-2018	Laurent Destailleur			<eldy@users.sourceforge.net>
  * Copyright (C) 2018-2019	Nicolas ZABOURI				<info@inovea-conseil.com>
  * Copyright (C) 2019-2024	Frédéric France				<frederic.france@free.fr>
- * Copyright (C) 2026		Fred S. Omega Junior
+ * Copyright (C) 2026  		Fred Omega Junior           <omegajunior.apps@gmail.com>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -54,7 +54,7 @@ class modScolaris extends DolibarrModules
 
 		// Family can be 'base' (core modules),'crm','financial','hr','projects','products','ecm','technic' (transverse modules),'interface' (link with external tools),'other','...'
 		// It is used to group modules by family in module setup page
-		$this->family = "other";
+		$this->family = "Fred Omega Junior";
 
 		// Module position in the family on 2 digits ('01', '10', '20', ...)
 		$this->module_position = '90';
@@ -66,12 +66,12 @@ class modScolaris extends DolibarrModules
 
 		// DESCRIPTION_FLAG
 		// Module description, used if translation string 'ModuleScolarisDesc' not found (Scolaris is name of module).
-		$this->description = "ScolarisDescription";
+		$this->description = "Gestion académique : notes & bulletins scolaires au Séminaire Philosophät de Ouidah";
 		// Used only if file README.md and README-LL.md not found.
-		$this->descriptionlong = "ScolarisDescription";
+		$this->descriptionlong = "Gestion académique : notes & bulletins scolaires au Séminaire Philosophät de Ouidah";
 
 		// Author
-		$this->editor_name = 'Fred H. Omega Junior';
+		$this->editor_name = 'Fred Omega Junior';
 		$this->editor_url = 'www.linkedin.com/in/frédéric-h-887621160';		// Must be an external online web site
 		$this->editor_squarred_logo = '';					// Must be image filename into the module/img directory followed with @modulename. Example: 'myimage.png@scolaris'
 

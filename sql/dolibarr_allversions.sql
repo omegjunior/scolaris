@@ -1,3 +1,6 @@
 --
 -- Script run when an upgrade of Dolibarr is done. Whatever is the Dolibarr version.
 --
+--
+-- Future incremental ALTER TABLE statements for Scolaris upgrades must be added here.
+-- Initial install schema is split across sql/llx_scolaris_*.sql and sql/llx_scolaris_*.key.sql

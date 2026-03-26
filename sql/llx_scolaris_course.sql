@@ -1,0 +1,25 @@
+-- DROP TABLE llx_scolaris_course
+CREATE TABLE llx_scolaris_course (
+  rowid integer AUTO_INCREMENT PRIMARY KEY,
+  entity integer NOT NULL DEFAULT 1,
+  fk_academic_year integer NOT NULL,
+  fk_semester integer NOT NULL,
+  fk_typology integer NOT NULL,
+  fk_rule_profile integer NULL,
+  code varchar(32) NOT NULL,
+  label varchar(255) NOT NULL,
+  coefficient decimal(10,2) NOT NULL DEFAULT 1.00,
+  credits decimal(10,2) NOT NULL DEFAULT 0.00,
+  display_order smallint NOT NULL DEFAULT 1,
+  nature varchar(32) NOT NULL DEFAULT 'mandatory',
+  counts_for_average tinyint NOT NULL DEFAULT 1,
+  counts_for_credits tinyint NOT NULL DEFAULT 1,
+  grading_scale decimal(10,2) NOT NULL DEFAULT 20.00,
+  status smallint NOT NULL DEFAULT 1,
+  note text NULL,
+  date_creation datetime NULL,
+  tms timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  fk_user_author integer NULL,
+  fk_user_modif integer NULL,
+  import_key varchar(14)
+) ENGINE=innodb;

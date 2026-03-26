@@ -1,0 +1,20 @@
+-- DROP TABLE llx_scolaris_typology_result
+CREATE TABLE llx_scolaris_typology_result (
+  rowid integer AUTO_INCREMENT PRIMARY KEY,
+  entity integer NOT NULL DEFAULT 1,
+  fk_student integer NOT NULL,
+  fk_enrollment integer NOT NULL,
+  fk_semester integer NOT NULL,
+  fk_typology integer NOT NULL,
+  fk_rule_profile integer NULL,
+  average_score decimal(10,4) NOT NULL DEFAULT 0.0000,
+  weighted_score_total decimal(20,8) NOT NULL DEFAULT 0.00000000,
+  credits_attempted decimal(10,2) NOT NULL DEFAULT 0.00,
+  credits_earned decimal(10,2) NOT NULL DEFAULT 0.00,
+  status smallint NOT NULL DEFAULT 0,
+  calculation_details longtext NULL,
+  calculated_at datetime NULL,
+  tms timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  fk_user_calculated integer NULL,
+  import_key varchar(14)
+) ENGINE=innodb;
